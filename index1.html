@@ -72,8 +72,8 @@
 <script>
   /* ========================== NHẠC NỀN ========================== */
 const bgm = {
-  track1: new Audio("music1.mp3"), // cho wave 1–20
-  track2: new Audio("music2.mp3"), // cho wave 21–40
+  track1: new Audio("./Images/music1.mp3"), // cho wave 1–20
+  track2: new Audio("./Images/music2.mp3"), // cho wave 21–40
 };
 bgm.track1.loop = true;
 bgm.track2.loop = true;
@@ -97,7 +97,7 @@ const sounds = {
   zombie:    new Audio("zombie.mp3"),
 };
 
-const bossSound = new Audio("boss.mp3");
+const bossSound = new Audio("./Images/boss.mp3");
 bossSound.volume = 1; // chỉnh âm lượng
 bossSound.loop = true; // 🌟 nhạc boss chạy lặp cho đến khi stop
 
@@ -114,28 +114,28 @@ function playSound(name) {
    Hoặc bấm nút "📷 Chọn ảnh nền" để chọn ảnh nền từ máy.
 ===================================================================== */
 const SPRITES = {
-  bg:           "nen.png", // Ảnh nền (1 tấm) — có thể đổi bằng nút upload
-  sunflower:    "flower.png",
-  peashooter:   "peashooter.png",
-  snowpea:      "snowpea.png",
-  repeater:     "repeater.png",
-  gaplin:       "gaplin.png",
-  cabbage:      "cabbage.png",
-  wallnut:      "walnut.png",
-  bomb:         "cherry.png",
-  torchwood:    "torchwood.png",
-  mine:         "potato.png",
-  zombie:       "zombie.png",
-  flagZombie:   "flagZombie.png",
-  sun:          "coin.png",
-  peashooter_bullet:   "peagreen.png",
-  snowpea_bullet:      "peablue.png",
-  repeater_bullet:     "peadupple.png",
-  peafire_bullet:      "peafire.png",
-  cabbage_bullet:      "cabbagepea.png",
-  florentino:          "florentino.png",
-  mobilezombie:        "mobilezombie.png",
-  horse:               "horse.png",
+  bg:           "./Images/nen.png", // Ảnh nền (1 tấm) — có thể đổi bằng nút upload
+  sunflower:    "./Images/flower.png",
+  peashooter:   "./Images/peashooter.png",
+  snowpea:      "./Images/snowpea.png",
+  repeater:     "./Images/repeater.png",
+  gaplin:       "./Images/gaplin.png",
+  cabbage:      "./Images/cabbage.png",
+  wallnut:      "./Images/walnut.png",
+  bomb:         "./Images/cherry.png",
+  torchwood:    "./Images/torchwood.png",
+  mine:         "./Images/potato.png",
+  zombie:       "./Images/zombie.png",
+  flagZombie:   "./Images/flagZombie.png",
+  sun:          "./Images/coin.png",
+  peashooter_bullet:   "./Images/peagreen.png",
+  snowpea_bullet:      "./Images/peablue.png",
+  repeater_bullet:     "./Images/peadupple.png",
+  peafire_bullet:      "./Images/peafire.png",
+  cabbage_bullet:      "./Images/cabbagepea.png",
+  florentino:          "./Images/florentino.png",
+  mobilezombie:        "./Images/mobilezombie.png",
+  horse:               "./Images/horse.png",
 };
 
 // Tạo đối tượng Image và load
@@ -819,3 +819,4 @@ loop(); // 🔥 gọi vòng lặp lần đầu
 </script>
 </body>
 </html>
+
