@@ -799,7 +799,7 @@ bgUpload.addEventListener("change", (e)=>{
 });
 
 // Bắt đầu vòng lặp
-function loop(){
+function gameloop(){
   ctx.clearRect(0,0,canvas.width,canvas.height);
   step();
   drawBackground();
@@ -812,9 +812,9 @@ function loop(){
     ctx.font="12px system-ui";
     ctx.fillText(s.amt, s.x-8, s.y+4);
   });
-  requestAnimationFrame(loop);
+  requestAnimationFrame(gameloop);
 }
-loop(); // 🔥 gọi vòng lặp lần đầu
+gameloop(); // 🔥 gọi vòng lặp lần đầu
 
 </script>
 </body>
