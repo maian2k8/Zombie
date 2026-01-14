@@ -179,7 +179,7 @@
 
       <div class="shop" id="shop"></div>
 
-      <canvas id="game" width="900" height="600"></canvas>
+      <canvas id="game" width="900" height="5500"></canvas>
       <div id="hud">
         ☀️ Sun: <b id="sun">50</b> |
         🌊 Wave: <b id="wave">1</b> |
@@ -194,8 +194,8 @@
   <script>
     /* ========================== NHẠC NỀN ========================== */
     const bgm = {
-      track1: new Audio("music1.mp3"), // cho wave 1–20
-      track2: new Audio("music2.mp3"), // cho wave 21–40
+      track1: new Audio("./Images/music1.mp3"), // cho wave 1–20
+      track2: new Audio("./Images/music2.mp3"), // cho wave 21–40
     };
     bgm.track1.loop = true;
     bgm.track2.loop = true;
@@ -219,7 +219,7 @@
       zombie: new Audio("zombie.mp3"),
     };
 
-    const bossSound = new Audio("boss.mp3");
+    const bossSound = new Audio("./Images/boss.mp3");
     bossSound.volume = 1; // chỉnh âm lượng
     bossSound.loop = true; // 🌟 nhạc boss chạy lặp cho đến khi stop
 
